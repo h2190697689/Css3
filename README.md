@@ -23,7 +23,7 @@
 - to right bottom  ,color1 ,color2
 - 90deg  ,color1 ,color2
 
-# 3d转换
+# 3D 转换
 
 ## transform
 - rotateX
@@ -42,12 +42,15 @@
 - x-axis 视图被置于X轴的何处    left,center,right,length,%
 - y-axis 视图被置于Y轴的何处    top,center,bottom,length,%
 
+
+# 过渡
 ## transition   过渡效果
 - transition-property	规定应用过渡的 CSS 属性的名称  none,all,property
 - transition-duration	定义过渡效果花费的时间。默认是 0
 - transition-timing-function	过渡效果的时间曲线,默认是 "ease"   linear,ease,ease-in,ease-out,ease-in-out
 - transition-delay	规定过渡效果何时开始。默认是 0
 
+# 动画
 ## animation  动画
 - @keyframes  规定动画
 - animation-name   规定 @keyframes 动画的名称
@@ -59,5 +62,35 @@
 - animation-fill-mode   规定动画不播放时，应用到元素的样式, forwards,backwards,both
 - animation-play-state  规定动画是否正在运行或暂停，默认running,paused
 
+# 用户界面
+## resize  允许用户调整大小
+- both 可调整高度和宽度
+- horizontal  用户可调整元素宽度
+- vertical 用户可调整元素高度
+
+## appearance  使元素看上去像什么外形
+- icon  
+- window  
+- button 
+- menu 
+- field 
+
+## outline-offset 外围轮廓
+- 偏移大小
+
+# 滤镜
+## filter
+-
+
+# 多媒体查询
+## @media
+- @media mediatype and|not|only (media feature) {
+    CSS-Code;
+  }
+- @media screen and (min-width: 480px){
+	body{
+	background-color: yellow;
+  }
+}
 
 

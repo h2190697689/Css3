@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>perspective的使用</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.wrap{
+			display: inline-block;
+			perspective: 500;
+			-webkit-perspective: 500;
+		}
+		.model{
+			display: inline-block;
+			width: 100px;
+			height: 300px;
+			background-color: red;
+			transform:rotateX(45deg);
+		}
+		.ti{
+			/*box-sizing: border-box;*/
+			/*width: 100px;*/
+			border-bottom: 100px solid red;
+			border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="model">iteration infinte alternate</div>
+	</div>
+	<div class="ti">梯形</div>
+	<span>效率</span>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>形状集合</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.shape1{
+			display: inline-block;
+			position: relative;
+			padding: 6px 26px;
+			color:white;
+			background-color: red;
+		}
+		.shape1:after{
+			content: "";
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: -1;
+			background: #58a;
+			transform:perspective(10px) rotateX(-5deg);
+			transform-origin: bottom;
+			/*transform-origin: bottom left;   向右侧倾斜的梯形 */
+			background-image: linear-gradient(rgba(255,255,255,0.8),rgba(255,255,255,0));  /* 添加一层白色的渐变 */
+			border-radius: 8px 8px 0 0;
+			box-shadow: 0 2px white inset;  /*白色的内阴影，打造高光的效果*/
+		}
+
+		.shape2{
+			width: 100px;
+			border-bottom: 100px solid red;
+			border-left: 30px solid transparent;
+			border-right: 30px solid transparent;
+		}
+
+		.shape3{
+			width: 100px;
+			height: 70px;
+			transform: skew(20deg);
+			background-color: #E5C3B2;
+
+		}
+
+		.shape4{
+			width: 80px;
+			height: 80px;
+			margin: 40px 0 0 40px;
+			transform: rotate(45deg);
+			transform-origin:60% 0;
+			background: #E5C3B2;
+		}
+
+		.shape5{
+			background-color: #e5c3b2;
+			height: 50px;
+			width: 100px;
+			/*border-radius: 50px 50px 0 0;*/
+			border-radius: 50px 50px 0 0;
+		}
+
+		.shape6{
+			width: 0;
+			height: 0;
+			border: 50px solid red;
+			border-color: purple red yellow orange;
+		}
+
+		.shape7{
+			width: 0;
+			height: 0;
+			border: 50px solid red;
+			border-color: purple red yellow orange;
+			border-radius: 50px;
+		}
+
+		.shape8{
+			width: 50px;
+			height: 50px;
+			background:#e5c3b2;
+			border-radius: 50px 0 0 0;
+		}
+
+		.shape9{
+			width: 0;
+			height: 0;
+			border: 50px solid #e5c3b2;
+			border-left-color: transparent;
+			border-radius: 50px;
+		}
+
+		.shape10{
+			width: 0;
+			height: 0;
+			border-color: red;
+			border-width: 0 40px 40px 0;
+			border-style: dotted;
+			/*border-left: 50px solid transparent;*/
+			/*border-right: 50px solid transparent;*/
+			/*border-bottom: 50px solid red;*/
+		}
+
+
+		.ribbon {
+			width: 0;
+			height: 100px;
+			border-left: 50px solid red;
+			border-right: 50px solid red;
+			border-bottom: 50px solid transparent
+		}
+	</style>
+</head>
+<body>
+	<div class="shape1">梯形</div>
+	<hr>
+	<div class="shape2">梯形</div>
+	<hr>
+    <div class="shape3">平行四边形</div>
+	<hr>
+	<div class="shape4">菱形</div>
+	<hr>
+	<div class="shape5">上半圆</div>
+	<hr>
+	<div class="shape6">签型</div>
+	<hr>
+	<div class="shape7">表图</div>
+	<hr>
+	<div class="shape8">四分之一圆</div>
+	<hr>
+	<div class="shape9">chart 左</div>
+	<hr>
+	<!--<div class="shape10">心形</div>-->
+	<hr>
+	<div class="ribbon">领带</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS3 3D转换</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.container{
+			width: 300px;
+			height: 300px;
+			background-color: yellow;
+			transition: 1s linear;
+		}
+		.container:hover{
+			transform: rotateY(360deg);
+			animation-durtaion: ;
+			animation-timing-function: ;   
+			animation-delay: ; 
+			animation-direction 
+		    animation-iteration-count:infinite;
+		}
+		.rote{
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background-color: yellow;
+			animation: rotate linear 3s infinite;
+			text-align: center;
+			line-height: 100px;
+			animation-play-state: running;
+		}
+		@keyframes rotate{
+        	from { transform: rotate(0deg);  } 
+        	to { transform: rotate(360deg);  } 
+		}
+	</style>
+</head>
+<body>
+<div class="container">hejiamin</div>
+<div class="rote">min</div>
+<script type="text/javascript">
+		var roteId=document.getElementsByClassName("rote")[0];
+		roteId.onclick= function(){
+			console.log(this);
+			if(this.style.animationPlayState==="running"){
+				this.style.animationPlayState="paused";
+			} else{
+				this.style.animationPlayState="running";
+			}
+		}
+	</script>
+</body>
+</html>

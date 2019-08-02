@@ -1,0 +1,22 @@
+transition-property: width;
+transition-timing-function: linear,ease, ease-in, ease-out , ease-in-out
+transition-duration: 5s;
+transition-delay: 5s;
+
+
+animation-duration
+
+animation-timing-function
+
+animation-delay
+
+animation-name
+
+animation-iteration-count: infinite
+infinite animation-fill-mode: forwards backwards
+animation-fill-mode: forwards backwards 
+
+animation-direction: reverse alternate
+
+animation-play-state
+animation-play-state
